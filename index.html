@@ -2,28 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Web Elite Support</title>
+  <title>Web Elite Agency | Digital Solutions & Support</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
     }
 
-    /* Support Box Container */
+    /* ===== HERO SECTION ===== */
+    .hero {
+      background: linear-gradient(135deg, #0f9d58, #0b7c45);
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+      opacity: 0.95;
+    }
+
+    .hero .cta {
+      margin-top: 30px;
+      display: inline-block;
+      background: #ffffff;
+      color: #0f9d58;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease;
+    }
+
+    .hero .cta:hover {
+      transform: scale(1.05);
+    }
+
+    /* ===== SERVICES ===== */
+    .services {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .service-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .service-card h3 {
+      color: #0f9d58;
+      margin-bottom: 10px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #111;
+      color: #bbb;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+
+    /* ===== SUPPORT BOX ===== */
     .support-box {
       position: fixed;
       bottom: 90px;
       right: 20px;
-      width: 240px;
+      width: 250px;
       background: #ffffff;
-      border-radius: 14px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      border-radius: 16px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
       overflow: hidden;
       z-index: 9999;
     }
 
-    /* Header */
     .support-header {
       background: #0f9d58;
       color: #ffffff;
@@ -33,44 +103,46 @@
       font-size: 15px;
     }
 
-    /* Buttons */
+    .support-sub {
+      font-size: 12px;
+      text-align: center;
+      padding: 8px;
+      background: #f0f0f0;
+      color: #555;
+    }
+
     .support-btn {
       display: block;
       margin: 10px;
-      padding: 12px;
-      border-radius: 8px;
+      padding: 13px;
+      border-radius: 10px;
       text-align: center;
       text-decoration: none;
       color: #ffffff;
       font-size: 14px;
       cursor: pointer;
-      transition: opacity 0.2s ease;
+      transition: opacity 0.2s ease, transform 0.2s ease;
     }
 
     .support-btn:hover {
-      opacity: 0.85;
+      opacity: 0.9;
+      transform: translateY(-2px);
     }
 
-    .whatsapp {
-      background: #25D366;
-    }
-
-    .telegram {
-      background: #0088cc;
-    }
-
-    .email {
-      background: #555555;
-    }
-
+    .whatsapp { background: #25D366; }
+    .telegram { background: #0088cc; }
+    .email { background: #555555; }
     .livechat {
       background: #0f9d58;
       border: none;
       width: calc(100% - 20px);
     }
 
-    /* Mobile friendliness */
     @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
       .support-box {
         width: 90%;
         right: 5%;
@@ -81,29 +153,57 @@
 
 <body>
 
-  <h1>Welcome to Web Elite Agency</h1>
-  <p>Our support team is available to help you.</p>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Web Elite Agency</h1>
+    <p>
+      We provide premium web solutions, digital services, and real-time customer support
+      to help your business grow online.
+    </p>
+    <a href="#support" class="cta">Contact Support</a>
+  </section>
 
-  <!-- Support Chat Box -->
-  <div class="support-box">
-    <div class="support-header">Support Chat</div>
+  <!-- SERVICES -->
+  <section class="services">
+    <div class="service-card">
+      <h3>Web Development</h3>
+      <p>Modern, responsive websites built for performance and growth.</p>
+    </div>
+    <div class="service-card">
+      <h3>Digital Marketing</h3>
+      <p>SEO, ads, and strategies that convert visitors into customers.</p>
+    </div>
+    <div class="service-card">
+      <h3>24/7 Support</h3>
+      <p>Reach us anytime via live chat, WhatsApp, Telegram, or email.</p>
+    </div>
+  </section>
 
-    <a href="https://wa.me/234XXXXXXXXXX" target="_blank" class="support-btn whatsapp">
-      Chat on WhatsApp
+  <!-- SUPPORT CHAT BOX -->
+  <div class="support-box" id="support">
+    <div class="support-header">Support Center</div>
+    <div class="support-sub">We typically reply within minutes</div>
+
+    <a href="https://wa.me/27707784492" target="_blank" class="support-btn whatsapp">
+      WhatsApp Support
     </a>
 
-    <a href="https://t.me/yourusername" target="_blank" class="support-btn telegram">
-      Chat on Telegram
+    <a href="https://t.me/thewebeliteco_agency" target="_blank" class="support-btn telegram">
+      Telegram Support
     </a>
 
-    <a href="mailto:support@yourdomain.com" class="support-btn email">
-      Send an Email
+    <a href="mailto:thewebeliteco.agency@gmail.com" class="support-btn email">
+      Email Support
     </a>
 
     <button class="support-btn livechat" onclick="Tawk_API.maximize();">
       Live Chat
     </button>
   </div>
+
+  <footer>
+    © 2026 Web Elite Agency. All rights reserved.
+  </footer>
 
   <!--Start of Tawk.to Script (DO NOT REMOVE)-->
   <script type="text/javascript">
