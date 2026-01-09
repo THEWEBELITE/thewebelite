@@ -1,243 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Web Elite Agency | Digital Solutions & Support</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Web Elite Agency | Digital Solutions & Support</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- FontAwesome for icons -->
-  <script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
+<!-- FontAwesome for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: #111; /* black background */
-      color: #fff;
-    }
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #121212;
+    color: #fff;
+  }
 
-    /* ===== HERO SECTION ===== */
-    .hero {
-      background: #111;
-      color: #fff;
-      padding: 80px 20px;
-      text-align: center;
-    }
+  /* ===== HERO SECTION ===== */
+  .hero {
+    background: #000;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
 
-    .hero h1 {
-      font-size: 42px;
-      margin-bottom: 15px;
-    }
+  .hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
 
-    .hero p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: auto;
-      opacity: 0.9;
-    }
+  .hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+    opacity: 0.9;
+  }
 
-    .hero .cta {
-      margin-top: 30px;
-      display: inline-block;
-      background: #0f9d58;
-      color: #fff;
-      padding: 14px 28px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: transform 0.2s ease;
-    }
+  .hero .cta {
+    margin-top: 30px;
+    display: inline-block;
+    background: #0f9d58;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+  }
 
-    .hero .cta:hover {
-      transform: scale(1.05);
-    }
+  .hero .cta:hover {
+    transform: scale(1.05);
+  }
 
-    /* ===== SERVICES ===== */
-    .services {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-    }
+  /* ===== SERVICES ===== */
+  .services {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+  }
 
-    .service-card {
-      background: #1a1a1a;
-      padding: 30px;
-      border-radius: 14px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-      text-align: center;
-      transition: transform 0.2s ease;
-    }
+  .service-card {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease;
+  }
 
-    .service-card:hover {
-      transform: translateY(-5px);
-    }
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
 
-    .service-card i {
-      font-size: 50px;
-      margin-bottom: 15px;
-      color: #0f9d58;
-    }
+  .service-card i {
+    font-size: 50px;
+    color: #0f9d58;
+    margin-bottom: 15px;
+  }
 
-    .service-card h3 {
-      color: #0f9d58;
-      margin-bottom: 10px;
-    }
+  .service-card h3 {
+    color: #0f9d58;
+    margin-bottom: 10px;
+  }
 
-    .service-card p {
-      font-size: 14px;
-      opacity: 0.9;
-    }
+  /* ===== FOOTER ===== */
+  footer {
+    background: #111;
+    color: #bbb;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+  }
 
-    /* ===== SUPPORT BOX ===== */
-    .support-box {
-      position: fixed;
-      bottom: 90px;
-      right: 20px;
-      width: 270px;
-      background: #1a1a1a;
-      border-radius: 16px;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.6);
-      overflow: hidden;
-      z-index: 9999;
-      color: #fff;
-    }
+  /* ===== SUPPORT BOX ===== */
+  .support-box {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 270px;
+    background: #1e1e1e;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    overflow: hidden;
+    z-index: 9999;
+  }
 
-    .support-header {
-      background: #0f9d58;
-      color: #ffffff;
-      text-align: center;
-      padding: 14px;
-      font-weight: bold;
-      font-size: 15px;
-    }
+  .support-header {
+    background: #0f9d58;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    font-weight: bold;
+    font-size: 15px;
+  }
 
-    .support-sub {
-      font-size: 12px;
-      text-align: center;
-      padding: 8px;
-      background: #222;
-      color: #bbb;
-    }
+  .support-sub {
+    font-size: 12px;
+    text-align: center;
+    padding: 8px;
+    background: #2a2a2a;
+    color: #aaa;
+  }
 
-    .support-btn {
-      display: block;
-      margin: 8px 12px;
-      padding: 12px;
-      border-radius: 10px;
-      text-align: center;
-      text-decoration: none;
-      color: #ffffff;
-      font-size: 14px;
-      cursor: pointer;
-      transition: opacity 0.2s ease, transform 0.2s ease;
-    }
+  .support-btn {
+    display: block;
+    margin: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
 
-    .support-btn:hover {
-      opacity: 0.9;
-      transform: translateY(-2px);
-    }
+  .support-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
 
-    .whatsapp { background: #25D366; }
-    .telegram { background: #0088cc; }
-    .email { background: #555555; }
-    .livechat { background: #0f9d58; border: none; width: calc(100% - 24px); }
+  .whatsapp { background: #25D366; }
+  .telegram { background: #0088cc; }
+  .email { background: #555555; }
+  .livechat {
+    background: #0f9d58;
+    border: none;
+    width: calc(100% - 20px);
+  }
 
-    .response-time {
-      font-size: 11px;
-      margin-top: 4px;
-      color: #ddd;
-    }
+  /* ===== RESPONSE TIMES ===== */
+  .response {
+    font-size: 11px;
+    color: #ccc;
+    margin-top: 4px;
+  }
 
-    @media (max-width: 600px) {
-      .hero h1 { font-size: 32px; }
-      .support-box { width: 90%; right: 5%; }
-    }
-
-    footer {
-      background: #111;
-      color: #bbb;
-      text-align: center;
-      padding: 25px;
-      font-size: 14px;
-    }
-
-  </style>
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 32px; }
+    .support-box { width: 90%; right: 5%; }
+  }
+</style>
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Web Elite Agency</h1>
-    <p>Premium web solutions, digital marketing, and 24/7 support to help your business grow online.</p>
-    <a href="#support" class="cta">Contact Support</a>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <h1>Web Elite Agency</h1>
+  <p>Premium web solutions, digital services, and fast multi-channel support to help your business thrive online.</p>
+  <a href="#support" class="cta">Contact Support</a>
+</section>
 
-  <!-- SERVICES -->
-  <section class="services">
-    <div class="service-card">
-      <i class="fas fa-laptop-code"></i>
-      <h3>Web Development</h3>
-      <p>Modern, responsive websites built for performance and growth.</p>
-    </div>
-    <div class="service-card">
-      <i class="fas fa-bullhorn"></i>
-      <h3>Digital Marketing</h3>
-      <p>SEO, ads, and strategies that convert visitors into customers.</p>
-    </div>
-    <div class="service-card">
-      <i class="fas fa-headset"></i>
-      <h3>24/7 Support</h3>
-      <p>Reach us anytime via live chat, WhatsApp, Telegram, or email.</p>
-    </div>
-  </section>
-
-  <!-- SUPPORT BOX -->
-  <div class="support-box" id="support">
-    <div class="support-header">Support Center</div>
-    <div class="support-sub">We reply quickly via all channels</div>
-
-    <a href="https://wa.me/27707784492" target="_blank" class="support-btn whatsapp">
-      WhatsApp Support
-      <div class="response-time">Reply: up to 30 min</div>
-    </a>
-
-    <a href="https://t.me/thewebeliteco_agency" target="_blank" class="support-btn telegram">
-      Telegram Support
-      <div class="response-time">Reply: up to 30 min</div>
-    </a>
-
-    <a href="mailto:thewebeliteco.agency@gmail.com" class="support-btn email">
-      Email Support
-      <div class="response-time">Reply: up to 2 hrs</div>
-    </a>
-
-    <button class="support-btn livechat" onclick="Tawk_API.maximize();">
-      Live Chat
-      <div class="response-time">Reply: 5 min</div>
-    </button>
+<!-- SERVICES -->
+<section class="services">
+  <div class="service-card">
+    <i class="fas fa-laptop-code"></i>
+    <h3>Web Development</h3>
+    <p>Modern, responsive websites built for performance and growth.</p>
   </div>
+  <div class="service-card">
+    <i class="fas fa-bullhorn"></i>
+    <h3>Digital Marketing</h3>
+    <p>SEO, ads, and strategies that convert visitors into customers.</p>
+  </div>
+  <div class="service-card">
+    <i class="fas fa-headset"></i>
+    <h3>24/7 Support</h3>
+    <p>Reach us anytime via Live Chat, WhatsApp, Telegram, or Email.</p>
+  </div>
+</section>
 
-  <footer>
-    © 2026 Web Elite Agency. All rights reserved.
-  </footer>
+<!-- SUPPORT CHAT BOX -->
+<div class="support-box" id="support">
+  <div class="support-header">Support Center</div>
+  <div class="support-sub">We typically reply within:</div>
 
-  <!--Start of Tawk.to Script (DO NOT REMOVE)-->
-  <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/69611230bca20e197aef3e95/1jehiu4ap';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
+  <a href="https://wa.me/27707784492" target="_blank" class="support-btn whatsapp">
+    WhatsApp Support
+    <div class="response">Up to 30 minutes</div>
+  </a>
+
+  <a href="https://t.me/thewebeliteco_agency" target="_blank" class="support-btn telegram">
+    Telegram Support
+    <div class="response">Up to 30 minutes</div>
+  </a>
+
+  <a href="mailto:thewebeliteco.agency@gmail.com" class="support-btn email">
+    Email Support
+    <div class="response">Up to 2 hours</div>
+  </a>
+
+  <button class="support-btn livechat" onclick="Tawk_API.maximize();">
+    Live Chat
+    <div class="response">5 minutes</div>
+  </button>
+</div>
+
+<footer>
+  © 2026 Web Elite Agency. All rights reserved.
+</footer>
+
+<!--Start of Tawk.to Script (DO NOT REMOVE)-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69611230bca20e197aef3e95/1jehiu4ap';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 
 </body>
 </html>
