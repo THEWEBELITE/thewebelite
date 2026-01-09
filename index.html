@@ -6,74 +6,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    /* ===== GLOBAL ===== */
     body {
       margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
-      background: #f5f7fa;
-      color: #333;
+      background: #000; /* Black background */
+      color: #fff;
     }
 
-    /* ===== HERO ===== */
+    a { text-decoration: none; }
+
+    /* ===== HERO SECTION ===== */
     .hero {
-      background: linear-gradient(135deg, #0f9d58, #0b7c45);
-      color: #fff;
-      padding: 90px 20px;
+      background: #111;
+      padding: 100px 20px;
       text-align: center;
     }
 
     .hero h1 {
-      font-size: 42px;
+      font-size: 48px;
       margin-bottom: 15px;
+      color: #fff;
     }
 
     .hero p {
       font-size: 18px;
       max-width: 700px;
       margin: auto;
-      opacity: 0.95;
+      color: #ccc;
+      opacity: 0.9;
+    }
+
+    .hero .cta {
+      margin-top: 30px;
+      display: inline-block;
+      background: #0f9d58;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .hero .cta:hover {
+      transform: scale(1.05);
+      background: #0b7c45;
     }
 
     /* ===== SERVICES ===== */
     .services {
-      padding: 70px 20px;
+      padding: 60px 20px;
       max-width: 1100px;
       margin: auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
     }
 
     .service-card {
-      background: #fff;
-      padding: 35px 25px;
-      border-radius: 16px;
-      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(255,255,255,0.05);
       text-align: center;
-      text-decoration: none;
-      color: inherit;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(255,255,255,0.1);
     }
 
-    .service-icon {
-      width: 64px;
-      height: 64px;
+    .service-card img {
+      width: 80px;
       margin-bottom: 15px;
     }
 
     .service-card h3 {
       color: #0f9d58;
       margin-bottom: 10px;
-      font-size: 20px;
     }
 
     .service-card p {
-      font-size: 15px;
-      color: #555;
+      color: #ccc;
+      font-size: 14px;
     }
 
     /* ===== SUPPORT BOX ===== */
@@ -81,19 +97,20 @@
       position: fixed;
       bottom: 90px;
       right: 20px;
-      width: 260px;
-      background: #ffffff;
+      width: 250px;
+      background: #111;
       border-radius: 16px;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+      box-shadow: 0 15px 30px rgba(255,255,255,0.2);
       overflow: hidden;
       z-index: 9999;
+      color: #fff;
     }
 
     .support-header {
       background: #0f9d58;
-      color: #ffffff;
+      color: #fff;
       text-align: center;
-      padding: 15px;
+      padding: 14px;
       font-weight: bold;
       font-size: 15px;
     }
@@ -102,21 +119,20 @@
       font-size: 12px;
       text-align: center;
       padding: 8px;
-      background: #f0f0f0;
-      color: #555;
+      background: #222;
+      color: #ccc;
     }
 
     .support-btn {
       display: block;
       margin: 10px;
-      padding: 14px;
+      padding: 13px;
       border-radius: 10px;
       text-align: center;
-      text-decoration: none;
-      color: #ffffff;
       font-size: 14px;
       cursor: pointer;
       transition: opacity 0.2s ease, transform 0.2s ease;
+      color: #fff;
     }
 
     .support-btn:hover {
@@ -127,12 +143,9 @@
     .whatsapp { background: #25D366; }
     .telegram { background: #0088cc; }
     .email { background: #555555; }
-    .livechat {
-      background: #0f9d58;
-      border: none;
-      width: calc(100% - 20px);
-    }
+    .livechat { background: #0f9d58; border: none; width: calc(100% - 20px); }
 
+    /* ===== FOOTER ===== */
     footer {
       background: #111;
       color: #bbb;
@@ -141,15 +154,10 @@
       font-size: 14px;
     }
 
+    /* ===== RESPONSIVE ===== */
     @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 32px;
-      }
-
-      .support-box {
-        width: 92%;
-        right: 4%;
-      }
+      .hero h1 { font-size: 36px; }
+      .support-box { width: 90%; right: 5%; }
     }
   </style>
 </head>
@@ -160,38 +168,34 @@
   <section class="hero">
     <h1>Web Elite Agency</h1>
     <p>
-      Premium web solutions, digital services, and real-time support
-      designed to help your business grow.
+      Premium web solutions, digital services, and instant customer support for your business growth.
     </p>
+    <a href="#support" class="cta">Contact Support</a>
   </section>
 
-  <!-- SERVICES (NOW CLICKABLE + IMAGES) -->
+  <!-- SERVICES -->
   <section class="services">
-
-    <a href="#support" class="service-card">
-      <img class="service-icon" src="https://cdn-icons-png.flaticon.com/512/841/841364.png" alt="Web Development">
+    <div class="service-card">
+      <img src="https://img.icons8.com/ios-filled/100/0f9d58/web.png" alt="Web Development">
       <h3>Web Development</h3>
-      <p>Modern, responsive websites built for speed, performance, and growth.</p>
-    </a>
-
-    <a href="#support" class="service-card">
-      <img class="service-icon" src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Digital Marketing">
+      <p>Modern, responsive websites built for performance and growth.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://img.icons8.com/ios-filled/100/0f9d58/marketing.png" alt="Digital Marketing">
       <h3>Digital Marketing</h3>
-      <p>SEO, ads, and digital strategies that convert visitors into customers.</p>
-    </a>
-
-    <a href="#support" class="service-card">
-      <img class="service-icon" src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Customer Support">
-      <h3>24/7 Customer Support</h3>
+      <p>SEO, social media, and campaigns that convert visitors into customers.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://img.icons8.com/ios-filled/100/0f9d58/customer-support.png" alt="Support">
+      <h3>24/7 Support</h3>
       <p>Reach us anytime via WhatsApp, Telegram, Email, or Live Chat.</p>
-    </a>
-
+    </div>
   </section>
 
   <!-- SUPPORT BOX -->
   <div class="support-box" id="support">
     <div class="support-header">Support Center</div>
-    <div class="support-sub">We typically reply within minutes</div>
+    <div class="support-sub">Typically replies within minutes</div>
 
     <a href="https://wa.me/27707784492" target="_blank" class="support-btn whatsapp">
       WhatsApp Support
